@@ -1,5 +1,9 @@
 <template>
     <div>
+        <Head>
+            <Title>{{ product.title }}</Title>
+            <Meta name="description" :content="product.description"></Meta>
+        </Head>
         <product-details :product="product"></product-details>
     </div>
 </template>
