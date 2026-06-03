@@ -9,11 +9,18 @@
             consectetur adipisicing elit. 
             Laborum sed soluta nemo dolorum consequatur deserunt fugit veniam, 
         </p>
+        <div>{{ data }}</div>
     </div>
 </template>
 
 <script setup>
-
+    const {data, error} = await useFetch('/api/ninja?name=Ruba',{
+        method: 'POST',
+        body: {age: 22}
+    }
+        
+    )
+    
 </script>
 
 <style  scoped>
