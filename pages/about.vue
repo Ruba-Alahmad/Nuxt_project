@@ -14,12 +14,7 @@
 </template>
 
 <script setup>
-    const {data, error} = await useFetch('/api/ninja?name=Ruba',{
-        method: 'POST',
-        body: {age: 22}
-    }
-        
-    )
+    const {data, error} = await useFetch('/api/ninja')
     
 </script>
 
