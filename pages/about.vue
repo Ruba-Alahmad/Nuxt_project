@@ -9,11 +9,13 @@
             consectetur adipisicing elit. 
             Laborum sed soluta nemo dolorum consequatur deserunt fugit veniam, 
         </p>
+        <div>{{ data }}</div>
     </div>
 </template>
 
 <script setup>
-
+    const {data, error} = await useFetch('/api/ninja')
+    
 </script>
 
 <style  scoped>
